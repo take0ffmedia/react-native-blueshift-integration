@@ -36,16 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jonathanm-tkf/react-native-blueshift-integration.git"
-  },
-  "author": "takeoffmedia <dev@takeoffmedia.com> (https://www.takeoffmedia.com)",
+  "repository": "https://github.com/take0ffmedia/react-native-blueshift-integration",
+  "author": "Takeoffmedia (https://github.com/take0ffmedia/react-native-blueshift-integration)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonathanm-tkf/react-native-blueshift-integration/issues"
+    "url": "https://github.com/take0ffmedia/react-native-blueshift-integration/issues"
   },
-  "homepage": "https://github.com/jonathanm-tkf/react-native-blueshift-integration#readme",
+  "homepage": "https://github.com/take0ffmedia/react-native-blueshift-integration#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
