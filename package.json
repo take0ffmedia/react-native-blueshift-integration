@@ -1,6 +1,6 @@
 {
   "name": "@takeoffmedia/react-native-blueshift-integration",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "full integration with blueshift plataform ",
   "main": "lib\\commonjs\\index.js",
   "module": "lib\\module\\index.js",
