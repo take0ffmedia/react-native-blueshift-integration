@@ -7,3 +7,4 @@ type BlueshiftIntegrationType = {
 const { BlueshiftIntegration } = NativeModules;
 
 export default BlueshiftIntegration as BlueshiftIntegrationType;
+// cmbio de prueba
