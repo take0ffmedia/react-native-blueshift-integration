@@ -8,6 +8,7 @@ export default function App() {
 
   React.useEffect(() => {
     ReactNativeBlueshiftIntegration.multiply(3, 7).then(setResult);
+    // commnet
   }, []);
 
   return (
