@@ -1,14 +1,17 @@
+/* eslint-disable prettier/prettier */
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
 import ReactNativeBlueshiftIntegration from '@takeoffmedia/react-native-blueshift-integration';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    ReactNativeBlueshiftIntegration.multiply(3, 7).then(setResult);
-    // commnet
+    ReactNativeBlueshiftIntegration.init().then(setResult);
+    setTimeout(() => {
+      ReactNativeBlueshiftIntegration.test().then((res)=>{console.log(res)})
+    }, 3000);
   }, []);
 
   return (

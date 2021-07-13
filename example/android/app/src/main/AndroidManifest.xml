@@ -2,6 +2,11 @@
   package="com.example.takeoffmediareactnativeblueshiftintegration">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- For scheduling network operations effectively -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- For analytical purpose (optional) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
       android:name=".MainApplication"
@@ -21,6 +26,20 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <service android:name="com.blueshift.fcm.BlueshiftMessagingService">
+          <intent-filter>
+              <action android:name="com.google.firebase.MESSAGING_EVENT" />
+          </intent-filter>
+      </service>
+      <receiver
+          android:name="com.blueshift.receiver.AppInstallReceiver"
+          android:exported="true">
+          <intent-filter>
+              <action android:name="com.android.vending.INSTALL_REFERRER" />
+
+              <data android:scheme="package" />
+          </intent-filter>
+      </receiver>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "16581943107",
+    "project_id": "rn-blueshift-integration-b02",
+    "storage_bucket": "rn-blueshift-integration-b02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16581943107:android:f851d26b13b5ff9c9a19f6",
+        "android_client_info": {
+          "package_name": "com.example.takeoffmediareactnativeblueshiftintegration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16581943107-2rndnjtm9halcdskauvt6rkse2bn3709.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYFpogshsNDdk-BqhbLdSndyVbTzCLdtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16581943107-2rndnjtm9halcdskauvt6rkse2bn3709.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
