@@ -5,13 +5,14 @@ import { StyleSheet, View, Text } from 'react-native';
 import ReactNativeBlueshiftIntegration from '@takeoffmedia/react-native-blueshift-integration';
 
 export default function App() {
-  const [result, setResult] = React.useState<string | undefined>();
+  const [result] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    ReactNativeBlueshiftIntegration.init().then(setResult);
-    setTimeout(() => {
-      ReactNativeBlueshiftIntegration.test().then((res)=>{console.log(res)})
-    }, 3000);
+    ReactNativeBlueshiftIntegration.configurate();
+    // ReactNativeBlueshiftIntegration.init().then(setResult);
+    // setTimeout(() => {
+    //   ReactNativeBlueshiftIntegration.test().then((res)=>{console.log(res)})
+    // }, 3000);
   }, []);
 
   return (

@@ -3,6 +3,7 @@ import { NativeModules } from 'react-native';
 
 type ReactNativeBlueshiftIntegrationType = {
   multiply(a: number, b: number): Promise<number>;
+  configurate():Promise<string>;
   init():Promise<string>;
   test():Promise<string>;
 };
