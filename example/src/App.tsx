@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import ReactNativeBlueshiftIntegration from '@takeoffmedia/react-native-blueshift-integration';
 
 export default function App() {
@@ -9,15 +9,25 @@ export default function App() {
 
   React.useEffect(() => {
     ReactNativeBlueshiftIntegration.configurate();
-    // ReactNativeBlueshiftIntegration.init().then(setResult);
-    // setTimeout(() => {
-    //   ReactNativeBlueshiftIntegration.test().then((res)=>{console.log(res)})
-    // }, 3000);
   }, []);
 
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <TouchableOpacity
+        onPress={() => {
+          ReactNativeBlueshiftIntegration.setUserInfoEmailId('jon@ex.com');
+          ReactNativeBlueshiftIntegration.UserItsCool(
+            'UserIsCool',
+            { is: true },
+            false
+          );
+          ReactNativeBlueshiftIntegration.setUserInfoCustomerId('1111111');
+        }}
+        style={{ padding: 20, backgroundColor: 'red' }}
+      >
+        <Text>Click</Text>
+      </TouchableOpacity>
     </View>
   );
 }
